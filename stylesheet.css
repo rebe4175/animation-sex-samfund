@@ -5,7 +5,7 @@ body {
 
 }
 
-400 225 #scene {
+#scene {
 
     width: 100vw;
     /* svarer til 1600px */
@@ -16,7 +16,6 @@ body {
 }
 
 #skaerm1 {
-
 
     width: 100%;
     height: 100%;
@@ -46,3 +45,172 @@ body {
     background-image: url(scene2-01-kopi.svg);
     background-size: 100%, 100%;
 }
+
+#skaerm3 {
+
+    width: 100%;
+    height: 100%;
+
+    width: 45vw;
+    height: 25.31vw;
+
+    top: 25.3vw;
+
+    position: absolute;
+
+    background-image: url(scene3-01-kopi.jpg);
+    background-size: 100%, 100%;
+}
+
+#skaerm4 {
+
+    width: 100%;
+    height: 100%;
+
+    width: 45vw;
+    height: 25.31vw;
+
+    top: 25.3vw;
+    left: 45vw;
+
+    position: absolute;
+
+    background-image: url(scene4-01-kopi.svg);
+    background-size: 100%, 100%;
+}
+
+
+#person1_sprite {
+
+    width: 100%;
+    height: 100%;
+
+    width: 45vw;
+    height: 25.31vw;
+
+    top: 0vw;
+    left: 0vw;
+
+    position: absolute;
+
+    background-image: url(pige1-01-kopi.svg);
+    background-size: 100%, 100%;
+
+    z-index: 2;
+
+}
+
+#person2_sprite {
+
+    width: 100%;
+    height: 100%;
+
+    width: 45vw;
+    height: 25.31vw;
+
+    top: 0vw;
+    left: 0vw;
+
+    position: absolute;
+
+    background-image: url(pige2-01-kopi.svg);
+    background-size: 100%, 100%;
+
+    z-index: 3;
+}
+
+#person3_sprite {
+
+    width: 100%;
+    height: 100%;
+
+    width: 45vw;
+    height: 25.31vw;
+
+    top: 0vw;
+    left: 0vw;
+
+    position: absolute;
+
+    background-image: url(dreng2-01-kopi.svg);
+    background-size: 100%, 100%;
+
+    z-index: 2;
+}
+
+#person4_sprite {
+
+    width: 100%;
+    height: 100%;
+
+    width: 45vw;
+    height: 25.31vw;
+
+    top: 0vw;
+    left: 0vw;
+
+    position: absolute;
+
+    background-image: url(pige3_3-01-kopi.svg);
+    background-size: 100%, 100%;
+
+    z-index: 2;
+}
+
+#person5_sprite {
+
+    width: 100%;
+    height: 100%;
+
+    width: 45vw;
+    height: 25.31vw;
+
+    top: 0vw;
+    left: 0vw;
+
+    position: absolute;
+
+    background-image: url(pige2_3-01-kopi.svg);
+    background-size: 100%, 100%;
+
+    z-index: 3;
+}
+
+#person6_sprite {
+
+    width: 100%;
+    height: 100%;
+
+    width: 45vw;
+    height: 25.31vw;
+
+    top: 0vw;
+    left: 0vw;
+
+    position: absolute;
+
+    background-image: url(pige4_3-01-kopi.svg);
+    background-size: 100%, 100%;
+
+    z-index: 2;
+}
+
+#person7_sprite {
+
+    width: 100%;
+    height: 100%;
+
+    width: 45vw;
+    height: 25.31vw;
+
+    top: 0vw;
+    left: 0vw;
+
+    position: absolute;
+
+    background-image: url(pige1_3-01-kopi.svg);
+    background-size: 100%, 100%;
+
+    z-index: 2;
+}
+
