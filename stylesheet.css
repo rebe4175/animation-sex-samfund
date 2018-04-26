@@ -39,8 +39,10 @@ body {
     width: 45vw;
     height: 25.31vw;
 
+    left: 45vw;
+
     position: absolute;
 
-    background-image: url();
+    background-image: url(scene2-01-kopi.svg);
     background-size: 100%, 100%;
 }
