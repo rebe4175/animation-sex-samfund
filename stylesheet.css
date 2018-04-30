@@ -5,6 +5,9 @@ body {
 
 }
 
+
+/* ---------------- BAGGRUNDE --------------- */
+
 #scene {
 
     width: 100vw;
@@ -28,6 +31,8 @@ body {
 
     background-image: url(scene1-01-kopi.svg);
     background-size: 100%, 100%;
+
+    z-index: 1;
 }
 
 #skaerm2 {
@@ -44,6 +49,9 @@ body {
 
     background-image: url(scene2-01-kopi.svg);
     background-size: 100%, 100%;
+
+
+    z-index: 2;
 }
 
 #skaerm3 {
@@ -60,6 +68,9 @@ body {
 
     background-image: url(scene3-01-kopi.jpg);
     background-size: 100%, 100%;
+
+
+    z-index: 3;
 }
 
 #skaerm4 {
@@ -77,8 +88,30 @@ body {
 
     background-image: url(scene4-01-kopi.svg);
     background-size: 100%, 100%;
+
+
+    z-index: 4;
+
 }
 
+#fuldskaerm {
+
+    width: 90vw;
+    height: 50.62vw;
+
+
+    position: absolute;
+
+    background-image: url(scene4-01-kopi.svg);
+    background-size: 100%, 100%;
+
+    z-index: 100;
+
+}
+
+
+
+/* ---------------- SPRITESHEETS --------------- */
 
 #person1_sprite {
 
@@ -214,3 +247,153 @@ body {
     z-index: 2;
 }
 
+
+#betina_sprite {
+
+    width: 100%;
+    height: 100%;
+
+    width: 16.35vw;
+    height: 23.4vw;
+
+    top: 2vw;
+    left: 27vw;
+
+    position: absolute;
+
+    background-image: url(betina-01-kopi.svg);
+    background-size: 300%, 100%;
+
+    z-index: 2;
+
+}
+
+/* ----------------- BETINAS REAKTION --------------- */
+
+.reaktion {
+
+    animation-name: reaction_kf;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(3);
+
+}
+
+
+@keyframes reaction_kf {
+
+    0% {
+        background-position: 0 0;
+
+    }
+
+    100% {
+        background-position: -300% 0%;
+
+    }
+
+}
+
+/* ----------------- KLIK PÅ BILLEDE --------------- */
+
+.billede {
+    width: 9.4vw;
+    height: 14.06vw;
+    background-size: cover;
+    background-image: url(blond-teen-girl-studio-portrait-46652557.jpg);
+    position: absolute;
+
+}
+
+.nr1 {
+    top: 2vw;
+    left: 15vw;
+}
+
+.nr2 {
+    top: 18vw;
+    left: 15vw;
+}
+
+.nr3 {
+    top: 34vw;
+    left: 15vw;
+}
+
+.nr4 {
+    top: 2vw;
+    left: 35vw;
+}
+
+.nr5 {
+    top: 18vw;
+    left: 35vw;
+}
+
+.nr6 {
+    top: 34vw;
+    left: 35vw;
+}
+
+.nr7 {
+    top: 34vw;
+    left: 55vw;
+}
+
+.nr8 {
+    top: 2vw;
+    left: 55vw;
+}
+
+.nr9 {
+    top: 18vw;
+    left: 55vw;
+}
+
+/* ----------------- BILLEDE PULS --------------- */
+
+.puls {
+    animation-name: puls_kf;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes puls_kf {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+/* ------------ slutningA --------------- */
+
+.slutningA {
+
+    animation-name: slutninga_kf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slutninga_kf {
+
+    0% {
+        background-image: url(slutninga.png);
+        width: 90vw;
+        height: 50.62vw;
+
+
+        position: absolute;
+    }
+
+
+    100% {
+        background-image: url(slutninga.png);
+        width: 90vw;
+        height: 50.62vw;
+
+
+        position: absolute;
+    }
+}
