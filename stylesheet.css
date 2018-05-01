@@ -297,56 +297,56 @@ body {
 /* ----------------- KLIK PÅ BILLEDE --------------- */
 
 .billede {
-    width: 9.4vw;
-    height: 14.06vw;
+    width: 14.5vw;
+    height: 20.83vw;
     background-size: cover;
-    background-image: url(blond-teen-girl-studio-portrait-46652557.jpg);
+    background-image: url(nogen-01.svg);
     position: absolute;
 
 }
 
 .nr1 {
-    top: 2vw;
+    top: 0vw;
     left: 15vw;
 }
 
 .nr2 {
-    top: 18vw;
+    top: 16vw;
     left: 15vw;
 }
 
 .nr3 {
-    top: 34vw;
+    top: 32vw;
     left: 15vw;
 }
 
 .nr4 {
-    top: 2vw;
+    top: 0vw;
     left: 35vw;
 }
 
 .nr5 {
-    top: 18vw;
+    top: 16vw;
     left: 35vw;
 }
 
 .nr6 {
-    top: 34vw;
+    top: 32vw;
     left: 35vw;
 }
 
 .nr7 {
-    top: 34vw;
+    top: 32vw;
     left: 55vw;
 }
 
 .nr8 {
-    top: 2vw;
+    top: 0vw;
     left: 55vw;
 }
 
 .nr9 {
-    top: 18vw;
+    top: 16vw;
     left: 55vw;
 }
 
@@ -380,9 +380,10 @@ body {
 
     0% {
         background-image: url(slutninga.png);
-        width: 90vw;
-        height: 50.62vw;
+        width: 100%;
+        height: 100%;
 
+        background-size: cover;
 
         position: absolute;
     }
@@ -390,10 +391,9 @@ body {
 
     100% {
         background-image: url(slutninga.png);
-        width: 90vw;
-        height: 50.62vw;
-
-
+        width: 100%;
+        height: 100%;
+        background-size: cover;
         position: absolute;
     }
 }
