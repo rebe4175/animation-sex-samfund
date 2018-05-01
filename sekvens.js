@@ -110,10 +110,8 @@ function tidenergaaet() {
 
         $(".billede").removeClass("puls");
         $(".billede").off("click", klikPaaBillede);
-
     }
 }
-
 
 function privatSnakB() {
 

@@ -297,10 +297,10 @@ body {
 /* ----------------- KLIK PÅ BILLEDE --------------- */
 
 .billede {
-    width: 14.5vw;
-    height: 20.83vw;
+    width: 12.0vw;
+    height: 17.35vw;
     background-size: cover;
-    background-image: url(nogen-01.svg);
+    background-image: url(mobil_nogen-01.svg);
     position: absolute;
 
 }
@@ -394,6 +394,120 @@ body {
         width: 100%;
         height: 100%;
         background-size: cover;
+        position: absolute;
+    }
+}
+
+/* ------------ slutningB --------------- */
+
+/* ------------ tekst beskeder ------------ */
+
+.beskeder_1 {
+
+    animation-name: beskeder_1_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps();
+}
+
+@keyframes beskeder_1_kf {
+
+    0% {
+        background-image: url(slutninga.png);
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+    }
+
+
+    100% {
+        background-image: url(slutninga.png);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+}
+
+
+.beskeder_2 {
+
+    animation-name: beskeder_2_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps();
+}
+
+@keyframes beskeder_2_kf {
+
+    0% {
+        background-image: url(slutninga.png);
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+    }
+
+
+    100% {
+        background-image: url(slutninga.png);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+}
+
+
+.beskeder_3 {
+
+    animation-name: beskeder_3_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps();
+}
+
+@keyframes beskeder_3_kf {
+
+    0% {
+        background-image: url(slutninga.png);
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+    }
+
+
+    100% {
+        background-image: url(slutninga.png);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+}
+
+.beskeder_4 {
+
+    animation-name: beskeder_4_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps();
+}
+
+@keyframes beskeder_4_kf {
+
+    0% {
+        background-image: url(slutninga.png);
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+    }
+
+
+    100% {
+        background-image: url(slutninga.png);
+        width: 100%;
+        height: 100%;
         position: absolute;
     }
 }
