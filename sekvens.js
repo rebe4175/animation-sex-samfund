@@ -51,7 +51,7 @@ function skaermFire() {
 
     $("#betina_sprite").addClass("reaktion");
 
-    setTimeout(fuldSkaerm, 7000);
+    setTimeout(fuldSkaerm, 6000);
 
 }
 
@@ -70,7 +70,7 @@ function klikIgen() {
     console.log("klik på billede igen");
     $(".billede").addClass("puls");
     $(".billede").on("click", klikPaaBillede);
-    setTimeout(tidenergaaet, 5000);
+    setTimeout(tidenergaaet, 6200);
 }
 
 
@@ -108,7 +108,8 @@ function tidenergaaet() {
 
     if (erAlleKlikket == false) {
 
-        privatSnakB();
+        $(".billede").removeClass("puls");
+        $(".billede").off("click", klikPaaBillede);
 
     }
 }
@@ -119,6 +120,7 @@ function privatSnakB() {
     console.log("slutning B");
     $(".billede").removeClass("puls");
     $(".billede").off("click", klikPaaBillede);
+
     $(".slutning_a").addClass("slutningA");
 
 }
