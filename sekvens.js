@@ -1,19 +1,37 @@
 var billeder
 var erAlleKlikket = false
 
-$(window).on("load", skaermEt);
+$(window).on("load", titelBillede);
 
 
-function skaermEt() {
+function titelBillede() {
 
-    console.log("skaerm et");
+    console.log("titelbillede vises");
 
+    $("#skaerm1").hide();
+    $("#tekst_1").hide();
     $("#skaerm2").hide();
     $("#skaerm3").hide();
     $("#skaerm4").hide();
     $("#fuldskaerm").hide();
 
-    setTimeout(skaermTo, 2000);
+    $("#titelbillede").on("click", skaermEt);
+
+}
+
+function skaermEt() {
+
+    console.log("skaerm et");
+    $("#skaerm1").fadeIn();
+    $("#skaerm2").hide();
+    $("#skaerm3").hide();
+    $("#skaerm4").hide();
+    $("#fuldskaerm").hide();
+    $("#titelbillede").hide();
+    $("#tekst_1").fadeIn();
+
+
+    setTimeout(skaermTo, 11000);
 
 }
 
@@ -25,8 +43,10 @@ function skaermTo() {
     $("#skaerm3").hide();
     $("#skaerm4").hide();
     $("#fuldskaerm").hide();
+    $("#titelbillede").hide();
+    $("#tekst_1").fadeOut();
 
-    setTimeout(skaermTre, 2000);
+    // setTimeout(skaermTre, 2000);
 }
 
 function skaermTre() {
@@ -36,8 +56,9 @@ function skaermTre() {
     $("#skaerm3").fadeIn();
     $("#skaerm4").hide();
     $("#fuldskaerm").hide();
+    $("#titelbillede").hide();
 
-    setTimeout(skaermFire, 1000);
+    //  setTimeout(skaermFire, 1000);
 }
 
 function skaermFire() {
@@ -46,18 +67,19 @@ function skaermFire() {
 
     $("#skaerm4").fadeIn();
     $("#fuldskaerm").hide();
-
-
+    $("#titelbillede").hide();
 
     $("#betina_sprite").addClass("reaktion");
 
-    setTimeout(fuldSkaerm, 6000);
+    //  setTimeout(fuldSkaerm, 6000);
 
 }
 
 function fuldSkaerm() {
 
     console.log("stor skaerm");
+
+    $("#titelbillede").hide();
 
     $("#fuldskaerm").fadeIn();
 
