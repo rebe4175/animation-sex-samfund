@@ -5,16 +5,15 @@ body {
 
 }
 
-
 /* ------------------- Titel ------------------ */
 
 #titelbillede {
 
     background-image: url(blaabaggrund.png);
-    width: 100%;
-    height: 100%;
 
-    background-size: cover;
+    width: 180vw;
+    height: 101.24vw;
+    overflow: hidden;
 
     position: absolute;
 }
@@ -53,6 +52,8 @@ body {
     /* svarer til 900 px */
     position: relative;
 
+    overflow: hidden;
+
 }
 
 #skaerm1 {
@@ -87,7 +88,6 @@ body {
     background-image: url(scene2-01-kopi.svg);
     background-size: 100%, 100%;
 
-
     z-index: 2;
 }
 
@@ -105,7 +105,6 @@ body {
 
     background-image: url(scene3-01-kopi.jpg);
     background-size: 100%, 100%;
-
 
     z-index: 3;
 }
@@ -133,19 +132,18 @@ body {
 
 #fuldskaerm {
 
-    width: 90vw;
-    height: 50.62vw;
+    width: 180vw;
+    height: 101.24vw;
 
 
     position: absolute;
 
-    background-image: url(scene4-01-kopi.svg);
+    background-image: url(blaabaggrund.png);
     background-size: 100%, 100%;
 
     z-index: 100;
 
 }
-
 
 
 /* ---------------- SPRITESHEETS --------------- */
@@ -305,12 +303,46 @@ body {
 
 }
 
+#nogen {
+
+    width: 16.35vw;
+    height: 23.4vw;
+
+    top: -2vw;
+    left: 70vw;
+
+    position: absolute;
+
+    background-image: url(Chatbeskeder_Bettina-03.png);
+    background-size: 100%, 100%;
+
+    z-index: 199;
+
+}
+
+#nogen2 {
+
+    width: 16.35vw;
+    height: 23.4vw;
+
+    top: 30vw;
+    left: 56vw;
+
+    position: absolute;
+
+    background-image: url(Chatbeskeder_Bettina-03.png);
+    background-size: 100%, 100%;
+
+    z-index: 199;
+
+}
+
 /* ----------------- BETINAS REAKTION --------------- */
 
 .reaktion {
 
     animation-name: reaction_kf;
-    animation-duration: 8s;
+    animation-duration: 4s;
     animation-iteration-count: 1;
     animation-timing-function: steps(3);
 
@@ -406,50 +438,94 @@ body {
 
 /* ------------ slutningA --------------- */
 
-.slutningA {
+#slutningA {
+    background-image: url(slutninga.png);
+    width: 120vw;
+    height: 67.5vw;
+    background-size: cover;
+    position: absolute;
+    background-size: 100%, 100%;
 
-    animation-name: slutninga_kf;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
+    z-index: 900;
 
-@keyframes slutninga_kf {
-
-    0% {
-        background-image: url(slutninga.png);
-        width: 100%;
-        height: 100%;
-
-        background-size: cover;
-
-        position: absolute;
-    }
-
-
-    100% {
-        background-image: url(slutninga.png);
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        position: absolute;
-    }
 }
 
 /* ------------ slutningB --------------- */
 
-/* ------------ tekst beskeder ------------ */
-
-#tekst_container {
-
-    animation-name: tekst_container_kf;
-    animation-duration: 20s;
-    animation-iteration-count: 1;
+#slutningB {
+    background-image: url(slutningb.png);
+    width: 120vw;
+    height: 67.5vw;
+    background-size: cover;
     position: absolute;
+    background-size: 100%, 100%;
 
+    z-index: 900;
 
 }
 
-@keyframes tekst_container_kf {
+/* ------------ hjaelp cecilie --------------- */
+
+#hjaelpcille {
+    background-image: url(cecilie-hjaelp.jpg);
+    width: 120vw;
+    height: 67.5vw;
+    top: -10vw;
+    left: -10vw;
+    background-size: 100%, 100%;
+    position: absolute;
+
+    z-index: 600;
+
+}
+
+#stopdeling {
+    background-image: url(stopdelingen.jpg);
+    background-size: 100%, 100%;
+
+    width: 42vw;
+    height: 30vw;
+
+    z-index: 700;
+
+    left: 30vw;
+    top: 22vw;
+
+    cursor: pointer;
+
+    position: absolute;
+}
+
+#stopdeling:hover {
+    background-image: url(stopdelingen.jpg);
+    background-size: 100%, 100%;
+
+    width: 42vw;
+    height: 30vw;
+
+    z-index: 700;
+
+    transform: scale(1.1);
+
+    left: 30vw;
+    top: 22vw;
+
+    position: absolute;
+}
+
+
+/* ------------ tekst beskeder ------------ */
+
+#tekst1_container {
+
+    animation-name: tekst1_container_kf;
+    animation-duration: 24s;
+    animation-iteration-count: 1;
+    position: absolute;
+
+}
+
+@keyframes tekst1_container_kf {
 
     0% {
         top: 5vw;
@@ -475,7 +551,7 @@ body {
     position: absolute;
 
     animation-name: tekst1_kf;
-    animation-duration: 12s;
+    animation-duration: 16s;
     animation-iteration-count: 1;
     animation-timing-function: steps(5);
 
@@ -490,4 +566,224 @@ body {
     100% {
         background-position: -500% 0%;
     }
+}
+
+.tekst2_move {
+
+    animation-name: tekstenkf;
+    animation-duration: 24s;
+    animation-iteration-count: 1;
+    position: absolute;
+
+}
+
+@keyframes tekstenkf {
+
+    0% {
+        top: -2vw;
+    }
+
+    100% {
+
+        top: -20vw;
+    }
+}
+
+#tekst_2 {
+
+    background-image: url(Chatbeskeder_Bettina-02.png);
+    background-size: 300%, 100%;
+
+    width: 18.75vw;
+    height: 30.31vw;
+
+    left: 70vw;
+    z-index: 200;
+
+    position: absolute;
+
+}
+
+.tekst2_sprite {
+
+    animation-name: tekst2_kf;
+    animation-duration: 12s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(3);
+}
+
+@keyframes tekst2_kf {
+
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -300% 0%;
+    }
+
+
+}
+
+/* ------------------- knapper ------------------ */
+
+#privatsnak {
+
+    background-image: url(privatsnaklogo.png);
+    background-size: 100%, 100%;
+
+    width: 27.68vw;
+    height: 20.5vw;
+
+    z-index: 901;
+
+    left: 65vw;
+    top: 42vw;
+
+    position: absolute;
+
+}
+
+#privatsnak:hover {
+
+    background-image: url(privatsnaklogo.png);
+    background-size: 100%, 100%;
+
+    width: 27.68vw;
+    height: 20.5vw;
+
+    z-index: 901;
+
+    transform: scale(1.1);
+
+    left: 65vw;
+    top: 42vw;
+
+    cursor: pointer;
+    position: absolute;
+
+}
+
+
+#knap1 {
+    background-image: url(Knapper/Knapper-02.png);
+    background-size: 100%, 100%;
+
+    width: 9.4vw;
+    height: 2.75vw;
+
+    z-index: 200;
+
+    left: 73vw;
+    top: 13vw;
+
+    cursor: pointer;
+    position: absolute;
+
+}
+
+#knap1:hover {
+    background-image: url(Knapper/Knapper-03.png);
+    background-size: 100%, 100%;
+
+    width: 9.4vw;
+    height: 2.75vw;
+
+    z-index: 200;
+
+    left: 73vw;
+    top: 13vw;
+
+    cursor: pointer;
+    position: absolute;
+
+}
+
+
+
+#knap2 {
+    background-image: url(Knapper/Knapper-04.png);
+    background-size: 100%, 100%;
+
+    width: 9.4vw;
+    height: 2.75vw;
+
+    z-index: 200;
+
+    left: 73vw;
+    top: 16vw;
+    cursor: pointer;
+    position: absolute;
+
+}
+
+#knap2:hover {
+    background-image: url(Knapper/Knapper-05.png);
+    background-size: 100%, 100%;
+
+    width: 9.4vw;
+    height: 2.75vw;
+
+    z-index: 200;
+
+    left: 73vw;
+    top: 16vw;
+
+    position: absolute;
+
+}
+
+/* -------------Modtager tekst------------- */
+
+#modtager {
+
+
+    background-size: 100%, 100%;
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+
+}
+
+#nummer1 {
+
+
+    background-size: 100%, 100%;
+
+    left: 22vw;
+    top: 28vw;
+    z-index: 400;
+    position: absolute;
+
+    font-family: sans-serif;
+    color: white;
+
+}
+
+#nummer2 {
+
+    background-size: 100%, 100%;
+
+    left: 12vw;
+    top: 32vw;
+    z-index: 400;
+    position: absolute;
+
+    font-family: sans-serif;
+    color: white;
+}
+
+#nummer3 {
+
+    background-size: 100%, 100%;
+
+    left: 7.5vw;
+    top: 30vw;
+    z-index: 400;
+    position: absolute;
+
+    font-family: sans-serif;
+    color: white;
 }
